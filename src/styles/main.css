@@ -1,0 +1,65 @@
+/* === import fonts dan icon harus paling atas === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Import custom fonts */
+@import './fonts.css';
+
+/* Import custom animations (WOW-like entrance utilities) */
+@import './animations.css';
+
+/* === setelah itu baru directive Tailwind === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === custom style kamu === */
+body {
+    @apply font-[Open_Sans] bg-[#f7f5f1] text-[#4a3f35];
+}
+
+/* WOW.js default behavior: hide elements until WOW triggers animation.
+   WOW adds `.animate__animated` when the element enters viewport.
+   Note: animate.css uses `.animate__animated` prefix.
+*/
+.wow {
+    visibility: hidden;
+}
+
+.wow.animate__animated {
+    visibility: visible;
+}
+
+/* Fallback: if WOW init fails, show everything. */
+.wow-disabled .wow {
+    visibility: visible;
+}
+
+/* Prevent pinch/double-tap zoom while keeping vertical scrolling. */
+html,
+body {
+    height: 100%;
+    overscroll-behavior: none;
+}
+
+/*
+  - `touch-action: pan-y` allows vertical scroll, blocks pinch-zoom.
+  - Works in most modern browsers; iOS Safari needs a JS fallback (added in main.js).
+*/
+#app {
+    touch-action: pan-y;
+}
+
+/* Reduce double-tap delay/highlight artifacts on iOS/Android */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --accent: #7a8562; /* olive hijau */
+    --text-main: #3f3b2c;
+    --bg-light: #f6f5ee;
+    --bg-secondary: #e4e0d2;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+}

@@ -1,0 +1,159 @@
+/*
+  Animation utilities (WOW-like entrance)
+  - Used by CoverMobile.vue and other invitation sections.
+  - Note: this project also imports `animate.css`; these classnames are custom to avoid collisions.
+*/
+
+/* ===== Floating / swaying loops ===== */
+.animate-float {
+  animation: wi-float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: wi-float 7s ease-in-out infinite;
+}
+
+.animate-sway-medium {
+  transform-origin: 50% 100%;
+  animation: wi-sway 4.5s ease-in-out infinite;
+}
+
+.animate-sway-slow {
+  transform-origin: 50% 100%;
+  animation: wi-sway 6.5s ease-in-out infinite;
+}
+
+.animate-swing-slow {
+  transform-origin: 50% 0%;
+  animation: wi-sway 6.5s ease-in-out infinite;
+}
+
+@keyframes wi-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes wi-sway {
+  0%,
+  100% {
+    transform: rotate(-1.2deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+}
+
+/* ===== Entrance (play once) =====
+   These are applied conditionally via `animateElements`.
+   We set `both` so the element stays visible after animating.
+*/
+
+.animate-fade-in {
+  animation: wi-fade-in 700ms ease both;
+}
+
+.animate-fade-in-up {
+  animation: wi-fade-in-up 800ms ease both;
+}
+
+.animate-fade-in-down {
+  animation: wi-fade-in-down 800ms ease both;
+}
+
+.animate-fade-in-left {
+  animation: wi-fade-in-left 800ms ease both;
+}
+
+.animate-fade-in-right {
+  animation: wi-fade-in-right 800ms ease both;
+}
+
+.animate-zoom-in {
+  animation: wi-zoom-in 800ms ease both;
+}
+
+@keyframes wi-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wi-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes wi-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes wi-fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-18px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes wi-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(18px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes wi-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== Accessibility: respect reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-sway-medium,
+  .animate-sway-slow,
+  .animate-fade-in,
+  .animate-fade-in-up,
+  .animate-fade-in-down,
+  .animate-fade-in-left,
+  .animate-fade-in-right,
+  .animate-zoom-in {
+    animation: none !important;
+  }
+}
+
