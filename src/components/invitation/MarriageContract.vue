@@ -1,23 +1,84 @@
 <template>
   <section
       id="wedding-date"
-      class="relative bg-[#f9f8f4] text-[#4a5b34] text-center py-16 px-6 overflow-hidden"
+      class="relative bg-[url('/images/bg-pattern1.png')] bg-repeat bg-[length:440px_700px] bg-[#f9f8f4] text-[#4a5b34] text-center py-16 px-6"
   >
-    <!-- Dekorasi Atas -->
-    <img
-        src="/images/bg-pattern1.png"
-        class="absolute top-0 left-0 w-full object-cover z-0 wow animate__fadeIn"
-        alt="top floral decoration"
-        data-wow-duration="1.5s"
-    />
+    <!-- Top Decoration -->
+    <div class="absolute top-0 left-0 w-full -translate-y-[130px] pointer-events-none z-30">
+      <div
+          class="absolute top-0 left-[-90px] w-1/2 md:w-1/3 wow animate__fadeInLeft"
+          data-wow-duration="1.5s"
+      >
+        <div class="animate-sway-medium" style="animation-delay: 0.3ms">
+          <img
+              src="/images/decoration/mawar-putih3.png"
+              class="w-full"
+              alt="flower left"
+          />
+        </div>
+      </div>
+      <div
+          class="absolute top-16 left-[-60px] w-1/2 md:w-1/3 wow animate__fadeInLeft"
+          data-wow-duration="1.5s"
+      >
+        <div class="animate-sway-slow">
+          <img
+              src="/images/decoration/daun-kayu-putih.png"
+              class="w-full -rotate-[25deg]"
+              alt="flower left"
+          />
+        </div>
+      </div>
+      <div
+          class="absolute top-[-6px] right-[-20px] w-80 md:w-72 wow animate__fadeInRight"
+          data-wow-duration="1.5s"
+      >
+        <div class="animate-sway-slow" style="animation-delay: 0.3ms">
+          <img
+              src="/images/decoration/anggrek-putih2.png"
+              class="w-full -rotate-[25deg] -translate-x-[6px] translate-y-[6px]"
+              alt="flower right"
+          />
+        </div>
+      </div>
+      <div
+          class="absolute top-28 right-[-20px] w-40 md:w-72 wow animate__fadeInRight"
+          data-wow-duration="1.5s"
+      >
+        <div class="animate-sway-medium" style="animation-delay: 0.5ms">
+          <img
+              src="/images/decoration/gelombang-cinta.png"
+              class="w-full -rotate-[180deg] -translate-x-[6px] translate-y-[6px]"
+              alt="flower right"
+          />
+        </div>
+      </div>
+      <div
+          class="absolute top-0 right-[-70px] w-36 md:w-72 wow animate__fadeInRight"
+          data-wow-duration="1.5s"
+      >
+        <div class="animate-sway-slow">
+          <img
+              src="/images/decoration/bunga-putih.png"
+              class="w-full -translate-x-[6px] translate-y-[6px]"
+              alt="flower right"
+          />
+        </div>
+      </div>
+    </div>
+
 
     <!-- Isi Utama -->
-    <div class="relative z-10 flex flex-col items-center space-y-20">
-
+    <div class="relative z-10 flex flex-col items-center space-y-20 pb-32">
+      <img
+          src="/images/decoration/tree.png"
+          class="w-full -rotate-[90deg] mt-[-400px] mb-[-100px] translate-y-2 scale-x-[-1] translate-x-[80px] z-10"
+          alt="flower right"
+      />
       <!-- Marriage Contract -->
       <div class="max-w-sm wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
         <!-- Use existing project script fonts -->
-         <h2 class="font-script mb-6">
+        <h2 class="font-script mb-6">
           <span class="mc-word mc-word--first">Akad</span>
           <span class="mc-word mc-word--second">Nikah</span>
         </h2>
@@ -71,23 +132,13 @@
         </a>
       </div>
     </div>
-
-    <!-- Dekorasi Bawah -->
-    <div class="absolute bottom-0 left-0 w-full pointer-events-none">
-      <img
-          src="/images/decoration/bunga-putih.png"
-          class="absolute bottom-[-10px] left-[-40px] w-1/3 animate-float-slow wow animate__fadeInLeft"
-          alt="bottom floral left"
-          data-wow-duration="1.5s"
-      />
-      <img
-          src="/images/decoration/daun-rosella.png"
-          class="absolute bottom-[-10px] right-[-40px] w-1/4 animate-float-slow-rev wow animate__fadeInRight"
-          alt="bottom floral right"
-          data-wow-duration="1.5s"
-      />
-    </div>
   </section>
+  <!-- Motif Batik Bottom -->
+  <img
+      src="/images/decoration/batik.png"
+      class="relative w-full object-cover wow animate__fadeIn h-24 sm:h-6 pointer-events-none"
+      alt="batik motif"
+      data-wow-duration="1.5s"
 </template>
 
 <script setup>
@@ -132,7 +183,7 @@
   font-family: 'Photograph';
   /* use relative path from this component to src/assets/fonts */
   src: url('../../assets/fonts/Photograph-Regular.woff2') format('woff2'),
-       url('../../assets/fonts/Photograph-Regular.woff') format('woff');
+  url('../../assets/fonts/Photograph-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -166,7 +217,13 @@
 
 /* responsive adjustments */
 @media (min-width: 768px) {
-  .mc-word--first { font-size: 4.2rem; transform: none; }
-  .mc-word--second { font-size: 3.6rem; }
+  .mc-word--first {
+    font-size: 4.2rem;
+    transform: none;
+  }
+
+  .mc-word--second {
+    font-size: 3.6rem;
+  }
 }
 </style>

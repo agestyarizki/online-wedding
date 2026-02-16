@@ -8,7 +8,7 @@
     <div class="absolute inset-0 bg-[#4a5b34]/70"></div>
 
     <div class="relative z-10 text-center mb-10">
-      <h2 class="font-photograph text-5xl mb-5 text-[#abab80] drop-shadow-md wow animate__fadeInDown" data-wow-duration="1s">
+      <h2 class="font-photograph text-5xl mb-5 text-[#abab80] drop-shadow-md wow animate__fadeInRight" data-wow-duration="1s">
         Kisah Cinta Kami
       </h2>
     </div>
@@ -66,22 +66,34 @@ import {EffectFade} from 'swiper/modules';
 const stories = [
   {
     title: 'Pertemuan Pertama',
-    image: '/images/couple/couple1.jpg',
+    image: '/images/stories/1.png',
     quote:
-        'Mata kami bertemu untuk pertama kalinya, dan momen itu menjadi awal dari perjalanan indah.',
+        'Bertemu tanpa rencana di sebuah kesempatan sederhana. Hanya saling sapa dan obrolan singkat, tapi ada kesan yang tertinggal.',
   },
   {
-    title: 'Lamaran',
-    image: '/images/couple/wanita.jpg',
+    title: 'Mulai Saling Mengenal',
+    image: '/images/stories/2.png',
     quote:
-        'Di bawah kehangatan cinta, dia berlutut dengan harapan — dan aku mengatakan ya, untuk selamanya bersama.',
+        'Percakapan semakin sering. Bukan hanya tentang hal umum, tapi mulai berbagi cerita hidup, nilai, dan rencana masa depan. Di sini rasa nyaman mulai tumbuh.',
   },
   {
-    title: 'Janji',
-    image: '/images/couple/wanita.jpg',
+    title: 'Momen Kesadaran',
+    image: '/images/stories/4.png',
     quote:
-        'Dua hati, satu jiwa. Kami berjanji untuk saling menyayangi, melindungi, dan tumbuh bersama dalam segala hal.',
+        'Ada satu titik ketika keduanya sadar: ini bukan sekadar hubungan biasa. Ada keseriusan dan keinginan untuk berjalan lebih jauh bersama.',
   },
+  {
+    title: 'Melewati Ujian',
+    image: '/images/stories/3.png',
+    quote:
+        'Perbedaan dan kesalahpahaman muncul, tetapi diselesaikan dengan komunikasi dan komitmen. Dari sini keyakinan semakin kuat.',
+  },
+  {
+    title: 'Keputusan untuk Menikah',
+    image: '/images/stories/5.JPG',
+    quote:
+        'Dengan niat yang jelas dan tujuan yang sama, keduanya sepakat melangkah ke jenjang pernikahan - bukan hanya karena cinta, tetapi karena kesiapan dan pilihan sadar untuk hidup bersama.',
+  }
 ];
 </script>
 

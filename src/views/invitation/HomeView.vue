@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative ">
 
     <!-- ========== MOBILE COVER (Hanya tampil di mobile) ========== -->
     <transition name="fade">
@@ -9,18 +9,18 @@
     <!-- ========== MAIN LAYOUT ========== -->
     <div
         v-show="invitationOpened || !isMobile"
-        class="flex flex-col md:flex-row h-screen"
+        class="flex flex-col md:flex-row h-screen "
     >
       <!-- LEFT PANEL (Desktop only) -->
       <div class="hidden md:flex flex-1 bg-[url('/trad-couple.jpg')] bg-cover bg-center relative">
-        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 bg-black/40 "></div>
         <h1 class="absolute bottom-12 left-12 text-white text-4xl font-[Playfair_Display]">
           Adelia & Hafizh
         </h1>
       </div>
 
       <!-- RIGHT PANEL -->
-      <div id="main-scroll-container" class="flex-1 overflow-y-auto bg-[url('/cover.jpg')] bg-cover bg-center scroll-smooth">
+      <div id="main-scroll-container" class="flex-1 overflow-y-auto overflow-x-hidden bg-[url('/cover.jpg')] bg-cover bg-center scroll-smooth">
         <!-- COVER -->
         <!-- COVER -->
         <CoverDesktop v-if="!isMobile" @scroll-down="scrollToSection('quote')"/>

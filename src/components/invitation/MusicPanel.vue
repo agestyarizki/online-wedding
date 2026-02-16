@@ -1,14 +1,14 @@
 <template>
-  <div class="fixed top-4 right-4 z-[0]">
+  <div class="fixed top-4 right-4 z-50">
     <button
         @click="toggleMusic"
-        class="w-10 h-10 rounded-full bg-[#2f2a26]/70 text-white flex items-center justify-center shadow-md hover:scale-105 hover:bg-[#2f2a26]/90 transition-all duration-300 backdrop-blur-sm"
+        class="w-10 h-10 rounded-full bg-[#ccccccb3]/70 text-white flex items-center justify-center shadow-md hover:scale-105 hover:bg-[#ccccccb3]/90 transition-all duration-300 backdrop-blur-sm"
     >
       <i
           :class="[
           'fa-regular ',
           'fa-circle-play',
-          isPlaying ? 'text-[#bfa980]' : 'text-white'
+          isPlaying ? 'text-[#5b8706]' : 'text-white'
         ]"
       ></i>
     </button>

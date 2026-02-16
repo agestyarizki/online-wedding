@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './styles/main.css'
 import 'animate.css'
+import 'baguettebox.js/dist/baguetteBox.min.css'
 
 // iOS Safari fallback: prevent pinch-zoom gestures.
 // Note: disabling zoom can reduce accessibility.

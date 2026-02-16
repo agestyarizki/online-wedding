@@ -1,7 +1,7 @@
 <template>
   <section
       id="save-the-date"
-      class="relative flex flex-col items-center justify-center text-center pt-20 pb-40 px-0 bg-[#4a5b34] text-[#f8f8f6] overflow-hidden"
+      class="relative z-[25] flex flex-col items-center justify-center text-center pt-20 pb-40 px-0 bg-[#4a5b34] text-[#f8f8f6] overflow-hidden"
   >
     <!-- Title -->
     <h2
@@ -32,21 +32,6 @@
       {{ formattedDate }}
     </p>
 
-    <!-- Bottom Decoration -->
-    <div class="absolute bottom-0 left-0 w-full">
-      <img
-          src="/images/decoration/bunga-putih.png"
-          class="absolute bottom-0 left-[-40px] w-1/3 animate-float-slow wow animate__fadeInLeft"
-          alt="flower left"
-          data-wow-duration="1.5s"
-      />
-      <img
-          src="/images/decoration/daun-rosella.png"
-          class="absolute bottom-[-20px] right-[-40px] w-1/4 animate-float-slow-rev wow animate__fadeInRight"
-          alt="flower right"
-          data-wow-duration="1.5s"
-      />
-    </div>
   </section>
 </template>
 

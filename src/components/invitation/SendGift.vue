@@ -1,5 +1,22 @@
 <template>
   <section class="relative bg-[#f9f8f4] text-center py-16 px-6 text-[#4a5b34]">
+    <!-- Wayang Background Left -->
+    <img
+        src="/images/decoration/wayang.png"
+        alt="wayang left"
+        :class="[
+            'absolute bottom-[-5px] left-[-60px] w-[160px] opacity-20 z-0'
+          ]"
+    />
+
+    <!-- Wayang Background Right -->
+    <img
+        src="/images/decoration/wayang.png"
+        alt="wayang right"
+        :class="[
+            'absolute bottom-[-5px] right-[-60px] w-[160px] opacity-20 z-0 scale-x-[-1]'
+          ]"
+    />
     <h2 class="font-script text-3xl tracking-widest mb-6 wow animate__fadeInDown" data-wow-duration="1s">Kirim Hadiah</h2>
     <p class="max-w-md mx-auto mb-8 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
       Kehadiran Anda adalah hadiah terindah bagi kami, namun jika ingin mengirimkan hadiah,
@@ -30,8 +47,8 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
 
-        <h3 class="text-2xl font-script tracking-widest mb-4 text-[#4a5b34]">
-          Pilih Rekening
+        <h3 class="text-lg tracking-widest mb-4 text-[#4a4a4a] opacity-70">
+          PILIH REKENING
         </h3>
 
         <div class="space-y-4">

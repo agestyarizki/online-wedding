@@ -1,7 +1,7 @@
 <template>
   <section id="precious" class="relative  bg-[#f8f8f6]">
     <!-- Background -->
-    <div class="sticky top-0 flex justify-center z-20 overflow-hidden">
+    <div class="sticky top-0 flex justify-center z-20 overflow-hidden pointer-events-none">
       <img
           src="/images/decoration/framegebyok.png"
           class="w-[110%] scale-[1.1] z-20 wow animate__fadeIn"
@@ -18,7 +18,6 @@
     <div class="relative z-10 -mt-[25rem] text-center">
       <!-- Intro (visible first) -->
       <div
-          ref="introSection"
           class="flex flex-col items-center justify-center text-center mb-44"
       >
 
@@ -33,28 +32,29 @@
 
       <!-- Gallery -->
       <div
-          ref="gallerySection"
-          class="h-[75vh] flex flex-col items-center justify-center"
+          class="flex flex-col items-center justify-center pb-16"
       >
-        <swiper
-            :modules="[Autoplay, EffectFade]"
-            effect="fade"
-            :autoplay="{ delay: 3000, disableOnInteraction: false }"
-            :loop="true"
-            class="w-[100%] aspect-[3/4] bottom-0 overflow-hidden shadow-lg wow animate__zoomIn"
+        <div
+            class="w-full max-w-5xl px-4 gallery-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-5 wow animate__zoomIn"
             data-wow-duration="1.2s"
             data-wow-delay="0.2s"
         >
-          <swiper-slide v-for="(image, i) in images" :key="i">
-            <img :src="image" class="object-cover w-full h-full"/>
-          </swiper-slide>
-        </swiper>
+          <a
+              v-for="(image, i) in images"
+              :key="i"
+              :href="image"
+              class="block w-full aspect-[3/4] overflow-hidden rounded-lg shadow-lg wow animate__fadeInUp"
+              :data-wow-delay="`${i * 0.05}s`"
+          >
+            <img :src="image" :alt="`Gallery photo ${i + 1}`" class="object-cover w-full h-full"/>
+          </a>
+        </div>
       </div>
 
-      <!-- Motif Batik Top -->
+      <!-- Motif Batik Bottom -->
       <img
           src="/images/decoration/batik.png"
-          class="absolute -mt-[23rem] w-full object-cover wow animate__fadeIn"
+          class="relative mt-6 w-full object-cover wow animate__fadeIn h-24 sm:h-6 pointer-events-none"
           alt="batik motif"
           data-wow-duration="1.5s"
       />
@@ -63,83 +63,28 @@
 </template>
 
 <script setup>
-import {ref, computed, onMounted} from "vue";
-import {Swiper, SwiperSlide} from "swiper/vue";
-import {Autoplay, EffectFade} from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-fade";
-
-// refs buat deteksi scroll area
-const introSection = ref(null);
-const gallerySection = ref(null);
-
-const currentSection = ref("intro");
-
-onMounted(() => {
-
-  const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target === introSection.value) currentSection.value = "intro";
-            if (entry.target === gallerySection.value)
-              currentSection.value = "gallery";
-          }
-        });
-      },
-      {threshold: 0.5}
-  );
-
-  observer.observe(introSection.value);
-  observer.observe(gallerySection.value);
-});
-
-// Dynamic component switch
-const currentComponent = computed(() => {
-  return currentSection.value === "intro" ? "IntroFrame" : "GalleryFrame";
-});
+import { onMounted } from "vue";
+import baguetteBox from "baguettebox.js";
 
 const images = [
-  "/images/couple/couple1.jpg",
-  "/images/couple/wanita.jpg",
-  "/images/couple/couple1.jpg",
+  "/images/galery/STR09555.JPG",
+  "/images/galery/STR09596.JPG",
+  "/images/galery/STR09654.JPG",
+  "/images/galery/STR09680.JPG",
+  "/images/galery/STR09583.JPG",
+  "/images/galery/STR09643.JPG",
+  "/images/galery/STR09629.JPG",
+  "/images/galery/STR09695.JPG",
+  "/images/galery/STR09635.JPG",
+  "/images/galery/STR09617.JPG",
+  "/images/galery/STR09689.JPG",
+  "/images/galery/STR09645.JPG",
 ];
-</script>
 
-<!-- Components to display inside the frame -->
-<script>
-export default {
-  components: {
-    GalleryFrame: {
-      template: `
-        <swiper
-            :modules="[Autoplay, EffectFade]"
-            effect="fade"
-            :autoplay="{ delay: 3000, disableOnInteraction: false }"
-            :loop="true"
-            class="w-full h-full"
-        >
-          <swiper-slide
-              v-for="(image, i) in ['/images/couple/couple1.jpg','/images/couple/couple2.jpg','/images/couple/couple3.jpg']"
-              :key="i">
-            <img :src="image" class="object-cover w-full h-full"/>
-          </swiper-slide>
-        </swiper>
-      `,
-      components: {Swiper, SwiperSlide},
-    },
-  },
-};
+onMounted(() => {
+  baguetteBox.run(".gallery-grid", { animation: "fadeIn" });
+});
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 1s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 </style>

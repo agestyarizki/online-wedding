@@ -30,22 +30,6 @@
     >
       Lihat Lokasi
     </a>
-
-    <!-- Dekorasi bawah -->
-    <div class="absolute bottom-0 left-0 w-full pointer-events-none">
-      <img
-          src="/images/decoration/bunga-putih.png"
-          class="absolute bottom-[-20px] left-[-40px] w-1/3 animate-float-slow wow animate__fadeInLeft"
-          alt="flower left"
-          data-wow-duration="1.5s"
-      />
-      <img
-          src="/images/decoration/daun-rosella.png"
-          class="absolute bottom-[-20px] right-[-40px] w-1/4 animate-float-slow-rev wow animate__fadeInRight"
-          alt="flower right"
-          data-wow-duration="1.5s"
-      />
-    </div>
   </section>
 </template>
 

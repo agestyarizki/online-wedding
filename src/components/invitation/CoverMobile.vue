@@ -1,6 +1,6 @@
 <template>
   <div
-      class="fixed inset-0 bg-cover bg-center flex flex-col justify-center items-center text-center z-50 overflow-hidden"
+      class="fixed inset-0 bg-cover bg-center flex flex-col justify-center items-center text-center z-50 overflow-hidden z-[70]"
       style="background-image: url('/images/cover2.jpg')"
   >
     <!-- Overlay putih transparan di atas background -->
@@ -117,7 +117,7 @@
         <img
             src="/images/decoration/logo-wedding.png"
             alt="Wedding Logo"
-            class="w-[160px] h-auto mx-auto"
+            class="w-[160px] h-auto ml-10"
         />
       </div>
 
