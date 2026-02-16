@@ -49,11 +49,11 @@ const isMobile = ref(false)
 const activeSection = ref('couple')
 
 const navItems = [
-  { id: 'couple', label: 'Couple', icon: 'fa-regular fa-heart' },
-  { id: 'gallery', label: 'Gallery', icon: 'fa-regular fa-address-book' },
-  { id: 'date', label: 'Date', icon: 'fa-regular fa-calendar' },
-  { id: 'location', label: 'Location', icon: 'fa-regular fa-bookmark' },
-  { id: 'rsvp', label: 'RSVP', icon: 'fa-regular fa-note-sticky' },
+  { id: 'couple', label: 'Pasangan', icon: 'fa-regular fa-heart' },
+  { id: 'gallery', label: 'Galeri', icon: 'fa-regular fa-address-book' },
+  { id: 'date', label: 'Tanggal', icon: 'fa-regular fa-calendar' },
+  { id: 'rsvp', label: 'Hadiah', icon: 'fa-regular fa-note-sticky' },
+  { id: 'location', label: 'Lokasi', icon: 'fa-regular fa-bookmark' },
 ]
 
 function scrollToSection(id) {
