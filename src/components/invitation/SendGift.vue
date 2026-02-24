@@ -48,7 +48,7 @@
         </button>
 
         <h3 class="text-lg tracking-widest mb-4 text-[#4a4a4a] opacity-70">
-          PILIH REKENING
+          PILIH TUJUAN
         </h3>
 
         <div class="space-y-4">
@@ -79,7 +79,6 @@
                     </button>
                   </p>
                 </div>
-
               </div>
             </div>
           </div>
@@ -111,8 +110,27 @@
                     </button>
                   </p>
                 </div>
-
               </div>
+            </div>
+          </div>
+
+          <!-- Address Card -->
+          <div
+              class="bg-gradient-to-r from-[#4a5b34] to-[#7b9261] text-white rounded-xl p-5 shadow-md flex flex-col gap-3"
+          >
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-semibold">Kirim Kado</span>
+            </div>
+            <p class="text-sm opacity-90">JL. Simpang Sukun No.78, RT02, RW04, Kelurahan Sukun, Kecamatan Sukun, Kota Malang</p>
+            <div class="flex justify-end items-center text-sm">
+              <button
+                  @click="copyToClipboard('JL. Simpang Sukun No.78, RT02, RW04, Kelurahan Sukun, Kecamatan Sukun, Kota Malang')"
+                  class="hover:text-[#b6e2b6] transition flex items-center gap-1"
+                  title="Salin Alamat"
+              >
+                <i class="fa-regular fa-copy"></i>
+                <span>Salin Alamat</span>
+              </button>
             </div>
           </div>
         </div>
@@ -168,4 +186,5 @@ function copyToClipboard(text) {
 .fade-leave-to {
   opacity: 0;
 }
+
 </style>
