@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-[url(/images/bg-pattern1.png)] bg-auto py-20 px-6 text-center relative overflow-hidden">
+  <section class="bg-[url(/images/bg-pattern1.png)] bg-repeat bg-[length:440px_800px] py-20 px-6 text-center relative overflow-hidden">
     <!-- LAYER 1: BATIK BACKGROUND -->
     <div class="mt-16">
-      <p class="font-photograph text-5xl text-[#a6a607] wow animate__fadeInDown" data-wow-duration="1s">Pernikahan
+      <p class="font-photograph text-5xl text-[#3f6a13] wow animate__fadeInDown" data-wow-duration="1s">Pernikahan
         Kami</p>
     </div>
     <div class="mt-32">
@@ -10,11 +10,9 @@
           class="wow animate__fadeIn absolute w-full h-[300px] left-0 mt-[2rem] object-cover inline-block"
           data-wow-duration="1.5s"
       >
-        <img
-            src="/images/decoration/batik.png"
-            alt="batik background"
-            class="w-full h-[300px] object-cover"
-        />
+        <span
+            class="block w-full h-[300px] bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] md:bg-[length:240px_240px]"
+        ></span>
       </span>
       <div class="relative max-w-sm mx-auto flex flex-col items-center">
 
@@ -85,10 +83,9 @@
              data-wow-delay="0.4s">
           <!-- LAYER 2: FOTO (sedikit zoom biar fit frame) -->
           <img
-              :src="`${publicBase}images/couple/STR09720.JPG`"
+              :src="`${publicBase}images/couple/STR09701.JPG`"
               alt="Photo Adelia"
-              :style="{ transform: 'scale(1.9) translateY(-2rem)' }"
-              class="absolute inset-0 w-[100px] mr-auto ml-auto h-full object-cover z-10"
+              class="absolute inset-0 w-[250px] mr-auto ml-auto h-full object-cover z-10"
           />
         </div>
 
@@ -115,11 +112,9 @@
           class="wow animate__fadeIn absolute w-full h-[300px] left-0 mt-[2rem] object-cover inline-block"
           data-wow-duration="1.5s"
       >
-        <img
-            src="/images/decoration/batik.png"
-            alt="batik background"
-            class="w-full h-[300px] object-cover"
-        />
+        <span
+            class="block w-full h-[300px] bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] md:bg-[length:240px_240px]"
+        ></span>
       </span>
       <div class="relative max-w-sm mx-auto flex flex-col items-center">
 

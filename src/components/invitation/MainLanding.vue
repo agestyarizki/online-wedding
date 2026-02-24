@@ -7,7 +7,7 @@
     <!-- POHON & DEKOR TENGAH -->
     <img
         src="/images/decoration/pohon-kelapa.png"
-        class="absolute top-24 left-[-80px] z-4 w-1/2 inclined-x animate-bounce-rotate"
+        class="absolute top-24 left-[-80px] z-4 w-1/2 md:w-2/5 lg:w-1/3 inclined-x animate-bounce-rotate"
         alt="top left flower"
     />
 
@@ -15,13 +15,13 @@
     <span class="absolute top-24 right-[-80px] scale-x-[-1]">
       <img
           src="/images/decoration/pohon-kelapa.png"
-          class="animate-sway-slow-rev"
+          class="animate-sway-slow-rev md:w-2/5 lg:w-1/3"
           alt="pohon kanan"
       />
     </span>
 
     <!-- bunga kiri atas: flip di wrapper, animasi di child -->
-    <span class="absolute top-5 left-[-23px] z-5 w-1/2 scale-x-[-1]">
+    <span class="absolute top-5 left-[-23px] z-5 w-1/2 md:w-5/12 lg:w-1/3 scale-x-[-1]">
       <img
           src="/images/decoration/anggrek-putih2.png"
           class="w-full animate-sway-medium"
@@ -30,7 +30,7 @@
     </span>
 
     <!-- bunga kanan atas: flip di wrapper, animasi di child -->
-    <span class="absolute top-6 right-[-20px] z-5 w-1/2">
+    <span class="absolute top-6 right-[-20px] z-5 w-1/2 md:w-5/12 lg:w-1/3">
       <img
           src="/images/decoration/anggrek-putih2.png"
           class="w-full animate-sway-medium"
@@ -42,12 +42,12 @@
     <!-- POHON KELAPA KIRI / KANAN -->
     <img
       src="/images/decoration/pohon-kelapa.png"
-      class="absolute left-0 bottom-20 w-1/3 animate-sway-slow"
+      class="absolute left-0 bottom-20 w-1/3 md:w-1/4 lg:w-1/5 animate-sway-slow"
       alt="left palm"
     />
 
     <!-- palm kanan: flip di wrapper, animasi di child -->
-    <span class="absolute right-0 bottom-0 w-1/3 scale-x-[-1]">
+    <span class="absolute right-0 bottom-0 w-1/3 md:w-1/4 lg:w-1/5 scale-x-[-1]">
       <img
         src="/images/decoration/pohon-kelapa.png"
         class="animate-sway-slow-rev"
@@ -57,37 +57,37 @@
 
     <!-- Wayang decoration - bottom left -->
     <img src="/images/decoration/wayang.png"
-         class="absolute bottom-[150px] left-[-10px] w-[43%] z-10 animate-breathe-slow"
+         class="absolute bottom-[150px] left-[-10px] w-[43%] md:w-[34%] lg:w-[30%] z-10 animate-breathe-slow"
          alt="wayang decoration"/>
 
     <!-- FOTO COUPLE -->
     <div
-        class="relative z-3 w-[85%] max-w-md aspect-[3/4] overflow-hidden oval-vertical border-4 border-[#cfc8b8]/50 shadow-xl wow animate__zoomIn"
+        class="relative z-3 w-[78%] sm:w-[70%] md:w-[60%] lg:w-[45%] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-[4/5] md:aspect-[3/4] overflow-hidden oval-vertical border-4 border-[#cfc8b8]/50 shadow-xl wow animate__zoomIn"
         data-wow-duration="1.2s"
         data-wow-delay="0.3s"
     >
       <transition name="fade" mode="out-in">
         <img :key="currentPhoto" :src="currentPhoto" alt="Foto couple"
-             class="absolute inset-0 w-full h-full object-cover object-[50%_180%] transition-all duration-1000 ease-in-out scale-125"/>
+             class="absolute inset-0 w-full h-full object-cover object-[50%_160%] md:object-center transition-all duration-1000 ease-in-out scale-125"/>
       </transition>
 
     </div>
 
     <img src="/images/decoration/anggrek-putih.png"
-         class="absolute bottom-0 left-[-2rem] w-[30%] z-10 animate-sway-medium"
+         class="absolute bottom-0 left-[-2rem] w-[30%] md:w-[24%] lg:w-[20%] z-10 animate-sway-medium"
          alt="peacock left"/>
-    <img src="/images/decoration/anggrek.png" class="absolute bottom-0 left-[2rem] w-[30%] animate-sway-medium"
+    <img src="/images/decoration/anggrek.png" class="absolute bottom-0 left-[2rem] w-[30%] md:w-[24%] lg:w-[20%] animate-sway-medium"
          data-wow-delay="0.6s"
          alt="peacock left"/>
-    <img src="/images/decoration/gelombang-cinta.png" class="absolute bottom-[-10px] left-[-1rem] w-[35%] z-10"
+    <img src="/images/decoration/gelombang-cinta.png" class="absolute bottom-[-10px] left-[-1rem] w-[35%] md:w-[28%] lg:w-[24%] z-10"
          alt="peacock left"/>
     <img src="/images/decoration/mawar-putih.png"
-         class="absolute bottom-[0px] right-[-4rem] w-[45%] scale-x-[-1] animate-sway-medium"/>
+         class="absolute bottom-[0px] right-[-4rem] w-[45%] md:w-[34%] lg:w-[30%] scale-x-[-1] animate-sway-medium"/>
     <img src="/images/decoration/bunga-putih.png"
-         class="absolute bottom-[-50px] right-[-1rem] w-[45%] scale-x-[-1] animate-sway-slow"/>
+         class="absolute bottom-[-50px] right-[-1rem] w-[45%] md:w-[34%] lg:w-[30%] scale-x-[-1] animate-sway-slow"/>
 
     <!-- DEKOR RUMPUT BAWAH -->
-    <img src="/images/decoration/rumput.png" class="absolute bottom-[-50px] w-[45%] animate-wave" alt="grass"/>
+    <img src="/images/decoration/rumput.png" class="absolute bottom-[-50px] w-[45%] md:w-[34%] lg:w-[30%] animate-wave" alt="grass"/>
   </section>
 </template>
 

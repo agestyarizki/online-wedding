@@ -1,13 +1,12 @@
 <template>
   <section
       id="wedding-date"
-      class="relative bg-[url('/images/bg-pattern1.png')] bg-repeat bg-[length:440px_700px] bg-[#f9f8f4] text-[#4a5b34] text-center py-16 px-6"
+      class="relative bg-[url('/images/bg-pattern1.png')] bg-repeat bg-[length:440px_800px] bg-[#f9f8f4] text-[#4a5b34] text-center py-16 px-6"
   >
     <!-- Top Decoration -->
     <div class="absolute top-0 left-0 w-full -translate-y-[130px] pointer-events-none z-30">
       <div
-          class="absolute top-0 left-[-90px] w-1/2 md:w-1/3 wow animate__fadeInLeft"
-          data-wow-duration="1.5s"
+          class="absolute top-0 left-[-90px] w-1/2 md:w-1/5"
       >
         <div class="animate-sway-medium" style="animation-delay: 0.3ms">
           <img
@@ -18,8 +17,7 @@
         </div>
       </div>
       <div
-          class="absolute top-16 left-[-60px] w-1/2 md:w-1/3 wow animate__fadeInLeft"
-          data-wow-duration="1.5s"
+          class="absolute top-16 left-[-60px] w-1/2 md:w-1/6"
       >
         <div class="animate-sway-slow">
           <img
@@ -30,8 +28,7 @@
         </div>
       </div>
       <div
-          class="absolute top-[-6px] right-[-20px] w-80 md:w-72 wow animate__fadeInRight"
-          data-wow-duration="1.5s"
+          class="absolute top-[-6px] right-[-20px] w-80 md:w-1/5"
       >
         <div class="animate-sway-slow" style="animation-delay: 0.3ms">
           <img
@@ -42,8 +39,7 @@
         </div>
       </div>
       <div
-          class="absolute top-28 right-[-20px] w-40 md:w-72 wow animate__fadeInRight"
-          data-wow-duration="1.5s"
+          class="absolute top-28 right-[-20px] w-40 md:w-1/6"
       >
         <div class="animate-sway-medium" style="animation-delay: 0.5ms">
           <img
@@ -54,8 +50,7 @@
         </div>
       </div>
       <div
-          class="absolute top-0 right-[-70px] w-36 md:w-72 wow animate__fadeInRight"
-          data-wow-duration="1.5s"
+          class="absolute top-0 right-[-70px] w-36 md:w-1/6"
       >
         <div class="animate-sway-slow">
           <img
@@ -69,14 +64,16 @@
 
 
     <!-- Isi Utama -->
-    <div class="relative z-10 flex flex-col items-center space-y-20 pb-32">
-      <img
-          src="/images/decoration/tree.png"
-          class="w-full -rotate-[90deg] mt-[-400px] mb-[-100px] translate-y-2 scale-x-[-1] translate-x-[80px] z-10"
-          alt="flower right"
-      />
+    <div ref="fadeSection" :class="['relative z-10 flex flex-col items-center space-y-20 pb-32 fade-in-section', { visible: isVisible }]">
+      <div class="w-full flex justify-center md:justify-end">
+        <img
+            src="/images/decoration/tree.png"
+            class="w-10/12 md:w-[60%] md:max-w-[800px] max-w-full -rotate-[90deg] mt-[-350px] md:mt-[-520px] mb-[-100px] translate-y-2 scale-x-[-1] translate-x-[80px] z-10"
+            alt="flower right"
+        />
+      </div>
       <!-- Marriage Contract -->
-      <div class="max-w-sm wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+      <div class="max-w-sm">
         <!-- Use existing project script fonts -->
         <h2 class="font-script mb-6">
           <span class="mc-word mc-word--first">Akad</span>
@@ -105,7 +102,7 @@
       </div>
 
       <!-- Reception -->
-      <div class="max-w-sm wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+      <div class="max-w-sm">
         <!-- Use existing project script fonts -->
         <h2 class="font-script mb-6">
           <span class="mc-word mc-word--first">Resepsi</span>
@@ -133,16 +130,35 @@
       </div>
     </div>
   </section>
+
   <!-- Motif Batik Bottom -->
-  <img
-      src="/images/decoration/batik.png"
-      class="relative w-full object-cover wow animate__fadeIn h-24 sm:h-6 pointer-events-none"
-      alt="batik motif"
+  <div
+      class="relative w-full h-16 md:h-24 bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] pointer-events-none wow animate__fadeIn"
       data-wow-duration="1.5s"
+      aria-label="batik motif repeat"
+  ></div>
+
 </template>
 
 <script setup>
-// WOW is initialized globally in HomeView (with scrollContainer).
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const fadeSection = ref(null)
+const isVisible = ref(false)
+let observer
+onMounted(() => {
+  observer = new window.IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        isVisible.value = true
+        observer.disconnect()
+      }
+    },
+    { threshold: 0.2 }
+  )
+  if (fadeSection.value) observer.observe(fadeSection.value)
+})
+onUnmounted(() => observer && observer.disconnect())
 </script>
 
 <style scoped>
@@ -225,5 +241,15 @@
   .mc-word--second {
     font-size: 3.6rem;
   }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1s cubic-bezier(.4,0,.2,1), transform 1s cubic-bezier(.4,0,.2,1);
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
 }
 </style>

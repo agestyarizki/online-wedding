@@ -221,11 +221,10 @@
     </div>
 
     <!-- Batik Decoration Bottom (memanjang dari kiri ke kanan) -->
-    <img
-        src="/images/decoration/batik.png"
-        alt="batik decoration"
-        class="absolute bottom-0 left-0 w-full h-[50px] object-cover object-bottom z-[100] opacity-75"
-    />
+    <div
+        class="absolute bottom-0 left-0 w-full h-[50px] bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] z-[100]"
+        aria-label="batik decoration repeat"
+    ></div>
   </div>
 </template>
 

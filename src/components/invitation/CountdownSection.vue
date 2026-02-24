@@ -5,8 +5,7 @@
   >
     <!-- Title -->
     <h2
-        class="font-photograph   italic text-4xl md:text-5xl mb-8 mt-8 text-[#f8f8f6] wow animate__fadeInDown"
-        data-wow-duration="1s"
+        class="font-photograph italic text-4xl md:text-5xl mb-8 mt-8 text-[#f8f8f6]"
     >
       Simpan Tanggalnya
     </h2>
@@ -16,9 +15,7 @@
       <div
           v-for="(unit, index) in timeUnits"
           :key="index"
-          class="bg-[#f8f8f6] text-[#4a5b34] px-4 py-3 rounded-sm shadow-sm wow animate__zoomIn"
-          :data-wow-duration="'1s'"
-          :data-wow-delay="`${0.2 + index * 0.1}s`"
+          class="bg-[#f8f8f6] text-[#4a5b34] px-4 py-3 rounded-sm shadow-sm"
       >
         <p class="text-3xl font-bold">{{ unit.value }}</p>
         <p class="text-sm font-extralight uppercase tracking-wide">
@@ -28,7 +25,7 @@
     </div>
 
     <!-- Date Text -->
-    <p class="text-lg font-light tracking-wide wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+    <p class="text-xl font-light tracking-wide font-photograph italic">
       {{ formattedDate }}
     </p>
 
@@ -89,37 +86,3 @@ const formattedDate = computed(() =>
     })
 );
 </script>
-
-<style scoped>
-@keyframes float-slow {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes float-slow-rev {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(6px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.animate-float-slow {
-  animation: float-slow 5s ease-in-out infinite;
-}
-
-.animate-float-slow-rev {
-  animation: float-slow-rev 5s ease-in-out infinite;
-}
-</style>

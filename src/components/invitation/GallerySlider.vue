@@ -11,11 +11,11 @@
     </div>
 
     <div
-        class="absolute inset-0 bg-[url('/images/bg-pattern1.png')] opacity-30 bg-repeat z-0"
+        class="absolute inset-0 bg-[url('/images/bg-pattern1.png')] bg-repeat bg-[length:440px_800px] opacity-50 bg-repeat z-0"
     ></div>
 
     <!-- SCROLLING CONTENT BELOW (buat trigger perubahan isi frame) -->
-    <div class="relative z-10 -mt-[25rem] text-center">
+    <div class="relative z-10 -mt-[5rem] text-center">
       <!-- Intro (visible first) -->
       <div
           class="flex flex-col items-center justify-center text-center mb-44"
@@ -46,18 +46,17 @@
               class="block w-full aspect-[3/4] overflow-hidden rounded-lg shadow-lg wow animate__fadeInUp"
               :data-wow-delay="`${i * 0.05}s`"
           >
-            <img :src="image" :alt="`Gallery photo ${i + 1}`" class="object-cover w-full h-full"/>
+            <img :src="image" :alt="`Gallery photo ${i + 1}`" class="object-cover w-full h-full" loading="lazy"/>
           </a>
         </div>
       </div>
 
       <!-- Motif Batik Bottom -->
-      <img
-          src="/images/decoration/batik.png"
-          class="relative mt-6 w-full object-cover wow animate__fadeIn h-24 sm:h-6 pointer-events-none"
-          alt="batik motif"
-          data-wow-duration="1.5s"
-      />
+      <div
+        class="relative mt-6 w-full h-16 md:h-24 bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] pointer-events-none wow animate__fadeIn"
+        data-wow-duration="1.5s"
+        aria-label="batik motif repeat"
+      ></div>
     </div>
   </section>
 </template>
