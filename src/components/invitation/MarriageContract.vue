@@ -108,7 +108,7 @@
           <span class="mc-word mc-word--first">Resepsi</span>
         </h2>
 
-        <p class="text-lg font-medium">Rabu, 4 Juni 2026</p>
+        <p class="text-lg font-medium">Kamis, 4 Juni 2026</p>
 
         <div class="flex justify-center items-center gap-2 mt-2 text-base">
           <span>10:00 WIB – Selesai</span>
@@ -122,6 +122,34 @@
 
         <a
             href="https://maps.app.goo.gl/ajM6Cea64gP5i1gW8"
+            target="_blank"
+            class="inline-block border border-[#4a5b34] rounded-full px-6 py-2 mt-6 text-lg hover:bg-[#4a5b34] hover:text-[#f9f8f4] transition-all duration-300"
+        >
+          lihat lokasi
+        </a>
+      </div>
+
+      <!-- Reception Download -->
+      <div class="max-w-sm">
+        <!-- Use existing project script fonts -->
+        <h2 class="font-script mb-6">
+          <span class="mc-word mc-word--first">Ngunduh Mantu</span>
+        </h2>
+
+        <p class="text-lg font-medium">Jumat, 5 Juni 2026</p>
+
+        <div class="flex justify-center items-center gap-2 mt-2 text-base">
+          <span>13:00 WIB – Selesai</span>
+        </div>
+
+        <div class="flex justify-center items-start gap-2 mt-4 text-base leading-relaxed">
+          <p>
+            JL. Tebo Selatan No.105 RT08 RW02, Kel Mulyorejo, Kec. Sukun, Kota Malang
+          </p>
+        </div>
+
+        <a
+            href="https://maps.app.goo.gl/dycd8Tj4MMZYsWaRA"
             target="_blank"
             class="inline-block border border-[#4a5b34] rounded-full px-6 py-2 mt-6 text-lg hover:bg-[#4a5b34] hover:text-[#f9f8f4] transition-all duration-300"
         >

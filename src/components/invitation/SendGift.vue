@@ -60,7 +60,7 @@
               <span class="text-lg font-semibold">BCA</span>
               <span class="text-sm opacity-80">VISA</span>
             </div>
-            <p class="tracking-widest text-lg font-mono">**** **** **** 6789</p>
+            <p class="tracking-widest text-lg font-mono">**** **** **** 0854</p>
             <div class="flex justify-between items-center text-sm">
               <div>
                 <p class="opacity-70">Pemilik Rekening</p>
@@ -69,9 +69,9 @@
               <div class="flex items-center gap-2">
                 <div>
                   <p class="opacity-70">No. Rekening</p>
-                  <p class="font-semibold">1234567890
+                  <p class="font-semibold">4480760854
                     <button
-                        @click="copyToClipboard('1234567890')"
+                        @click="copyToClipboard('4480760854')"
                         class="hover:text-white transition"
                         title="Salin Nomor Rekening"
                     >
@@ -83,15 +83,15 @@
             </div>
           </div>
 
-          <!-- Mandiri Card -->
+          <!-- BCA2 Card -->
           <div
               class="bg-gradient-to-r from-[#c9a82c] to-[#9c7b03] text-white rounded-xl p-5 shadow-md flex flex-col gap-3"
           >
             <div class="flex justify-between">
-              <span class="text-lg font-semibold">Mandiri</span>
+              <span class="text-lg font-semibold">BCA</span>
               <span class="text-sm opacity-80">VISA</span>
             </div>
-            <p class="tracking-widest text-lg font-mono">**** **** **** 2345</p>
+            <p class="tracking-widest text-lg font-mono">**** **** **** 7155</p>
             <div class="flex justify-between items-center text-sm">
               <div>
                 <p class="opacity-70">Account Holder</p>
@@ -100,9 +100,9 @@
               <div class="flex items-center gap-2">
                 <div>
                   <p class="opacity-70">No. Rekening</p>
-                  <p class="font-semibold">0000000000
+                  <p class="font-semibold">4480707155
                     <button
-                        @click="copyToClipboard('0000000000')"
+                        @click="copyToClipboard('4480707155')"
                         class="hover:text-white transition"
                         title="Copy Account Number"
                     >
