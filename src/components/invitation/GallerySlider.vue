@@ -65,20 +65,31 @@
 import { onMounted } from "vue";
 import baguetteBox from "baguettebox.js";
 
-const images = [
-  "/images/galery/STR09555.JPG",
-  "/images/galery/STR09596.JPG",
-  "/images/galery/STR09654.JPG",
-  "/images/galery/STR09680.JPG",
-  "/images/galery/STR09583.JPG",
-  "/images/galery/STR09643.JPG",
-  "/images/galery/STR09629.JPG",
-  "/images/galery/STR09695.JPG",
-  "/images/galery/STR09635.JPG",
-  "/images/galery/STR09617.JPG",
-  "/images/galery/STR09689.JPG",
-  "/images/galery/STR09645.JPG",
-];
+// Shuffle galleryFilenames array
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
+  return array;
+}
+const galleryFilenames = shuffle([
+  'IMG_6108.JPG',
+  'IMG_6110.JPG',
+  'IMG_6115.JPG',
+  'IMG_6121.JPG',
+  'IMG_6124.JPG',
+  'IMG_6142.JPG',
+  'IMG_6146.JPG',
+  'IMG_6149.JPG',
+  'IMG_6153.JPG',
+  'IMG_6154.JPG',
+  'IMG_6176.JPG',
+  'IMG_6177.JPG'
+])
+const images = galleryFilenames.map(name => `/images/galery/${name}`)
 
 onMounted(() => {
   baguetteBox.run(".gallery-grid", { animation: "fadeIn" });

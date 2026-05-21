@@ -80,10 +80,10 @@
           <span class="mc-word mc-word--second">Nikah</span>
         </h2>
 
-        <p class="text-lg font-medium">Rabu, 4 Juni 2026</p>
+        <p class="text-lg font-medium">Kamis, 4 Juni 2026</p>
 
         <div class="flex justify-center items-center gap-2 mt-2 text-base">
-          <span>08:00 WIB – 10.00 WIB</span>
+          <span>07:00 WIB – 09.00 WIB</span>
         </div>
 
         <div class="flex justify-center items-start gap-2 mt-4 text-base leading-relaxed">

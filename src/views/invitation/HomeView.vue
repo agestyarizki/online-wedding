@@ -12,7 +12,7 @@
         class="flex flex-col md:flex-row h-screen "
     >
       <!-- LEFT PANEL (Desktop only) -->
-      <div class="hidden md:flex flex-1 bg-[url('/images/couple/STR09606.JPG')] bg-cover bg-center relative">
+      <div class="hidden md:flex flex-1 bg-[url('/images/couple/IMG_6099.JPG')] bg-cover bg-center relative">
         <div class="absolute inset-0 bg-black/40 "></div>
         <h1 class="absolute bottom-12 font-photograph italic left-12 text-white text-6xl font-[Playfair_Display]">
           Adelia & Hafizh

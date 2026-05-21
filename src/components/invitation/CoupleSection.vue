@@ -83,8 +83,9 @@
              data-wow-delay="0.4s">
           <!-- LAYER 2: FOTO (sedikit zoom biar fit frame) -->
           <img
-              :src="`${publicBase}images/couple/STR09701.JPG`"
+              :src="`${publicBase}images/couple/IMG_6178.JPG`"
               alt="Photo Adelia"
+              :style="{ transform: 'scale(1.7) translateY(-1.5rem) translateX(-0.1rem)' }"
               class="absolute inset-0 w-[250px] mr-auto ml-auto h-full object-cover z-10"
           />
         </div>
@@ -184,9 +185,9 @@
              data-wow-delay="0.4s">
           <!-- LAYER 2: FOTO (sedikit zoom biar fit frame) -->
           <img
-              :src="`${publicBase}images/couple/STR09756.JPG`"
+              :src="`${publicBase}images/couple/IMG_6099.JPG`"
               alt="Hafiz photo"
-              :style="{ transform: 'scaleX(-1) scale(1.7) translateY(-1.2rem) translateX(-0.1rem)' }"
+              :style="{ transform: 'scaleX(-1) scale(1.5) translateY(-1.2rem) translateX(-0.1rem)' }"
               class="absolute inset-0 w-[150px] mr-auto ml-auto h-full object-cover z-10"
           />
         </div>
