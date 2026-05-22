@@ -14,7 +14,6 @@
             :src="img"
             alt="Couple photo"
             class="absolute inset-0 w-full h-full object-cover transition-all duration-700"
-            loading="lazy"
         />
       </transition-group>
     </div>
@@ -45,31 +44,12 @@
 <script setup>
 import {ref, onMounted, onUnmounted} from 'vue'
 
-// Ambil semua foto dari galeri utama (otomatis, urut acak)
-const galleryFilenames = [
-  'IMG_6108.webp',
-  'IMG_6110.webp',
-  'IMG_6115.webp',
-  'IMG_6121.webp',
-  'IMG_6124.webp',
-  'IMG_6142.webp',
-  'IMG_6146.webp',
-  'IMG_6149.webp',
-  'IMG_6153.webp',
-  'IMG_6154.webp',
-  'IMG_6176.webp',
-  'IMG_6177.webp'
+// daftar foto yang akan fade otomatis
+const images = [
+  '/gallery/photo1.webp',
+  '/gallery/photo2.webp',
+  '/gallery/photo3.webp'
 ]
-function shuffle(array) {
-  let currentIndex = array.length, randomIndex;
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-  }
-  return array;
-}
-const images = shuffle(galleryFilenames.map(name => `/images/galery/${name}`))
 
 const currentIndex = ref(0)
 let interval

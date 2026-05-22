@@ -11,7 +11,7 @@
     </div>
 
     <div
-        class="absolute inset-0 bg-[url('/images/bg-pattern1.webp')] bg-repeat bg-[length:440px_800px] opacity-50 z-0"
+        class="absolute inset-0 bg-[url('/images/bg-pattern1.webp')] bg-repeat bg-[length:440px_800px] opacity-50 bg-repeat z-0"
     ></div>
 
     <!-- SCROLLING CONTENT BELOW (buat trigger perubahan isi frame) -->

@@ -10,7 +10,7 @@
           class="gallery-item"
           :href="img.full"
       >
-        <img :src="img.thumb" :alt="`Gallery ${i+1}`" loading="lazy" />
+        <img :src="img.thumb" :alt="`Gallery ${i+1}`" />
       </a>
     </div>
   </section>
@@ -24,42 +24,12 @@ import baguetteBox from 'baguettebox.js'
 
 const grid = ref(null)
 const images = [
-  {
-    thumb: '/images/galery/IMG_6108.webp', full: '/images/galery/IMG_6108.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6110.webp', full: '/images/galery/IMG_6110.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6115.webp', full: '/images/galery/IMG_6115.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6121.webp', full: '/images/galery/IMG_6121.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6124.webp', full: '/images/galery/IMG_6124.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6142.webp', full: '/images/galery/IMG_6142.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6146.webp', full: '/images/galery/IMG_6146.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6149.webp', full: '/images/galery/IMG_6149.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6153.webp', full: '/images/galery/IMG_6153.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6154.webp', full: '/images/galery/IMG_6154.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6176.webp', full: '/images/galery/IMG_6176.webp'
-  },
-  {
-    thumb: '/images/galery/IMG_6177.webp', full: '/images/galery/IMG_6177.webp'
-  }
+  { thumb: 'https://picsum.photos/id/1015/600/800', full: 'https://picsum.photos/id/1015/1200/1600' },
+  { thumb: 'https://picsum.photos/id/1016/600/450', full: 'https://picsum.photos/id/1016/1200/900' },
+  { thumb: 'https://picsum.photos/id/1021/600/800', full: 'https://picsum.photos/id/1021/1200/1600' },
+  { thumb: 'https://picsum.photos/id/1025/600/500', full: 'https://picsum.photos/id/1025/1200/1000' },
+  { thumb: 'https://picsum.photos/id/1035/600/700', full: 'https://picsum.photos/id/1035/1200/1400' },
+  { thumb: 'https://picsum.photos/id/1041/600/450', full: 'https://picsum.photos/id/1041/1200/900' }
 ]
 
 onMounted(() => {
