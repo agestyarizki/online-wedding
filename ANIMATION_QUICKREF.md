@@ -90,14 +90,14 @@
 ```html
 <!-- Left decoration -->
 <img 
-  src="/decoration-left.png" 
+  src="/decoration-left.webp" 
   class="absolute left-0 top-0 animate-float-slow wow animate__fadeInLeft"
   data-wow-duration="1.5s"
 />
 
 <!-- Right decoration -->
 <img 
-  src="/decoration-right.png" 
+  src="/decoration-right.webp" 
   class="absolute right-0 top-0 animate-float-slow wow animate__fadeInRight"
   data-wow-duration="1.5s"
 />
@@ -199,12 +199,12 @@
     
     <!-- Decorations -->
     <img 
-      src="/flower-left.png"
+      src="/flower-left.webp"
       class="absolute left-0 animate-float-slow wow animate__fadeInLeft"
       data-wow-duration="1.5s"
     />
     <img 
-      src="/flower-right.png"
+      src="/flower-right.webp"
       class="absolute right-0 animate-float-slow wow animate__fadeInRight"
       data-wow-duration="1.5s"
     />

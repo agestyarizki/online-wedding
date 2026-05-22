@@ -2,7 +2,7 @@
   <section class="relative flex flex-col items-center justify-center text-center text-white py-20 px-6 overflow-hidden bg-[#3a4928]">
     <!-- Batik utama -->
     <div
-      class="absolute inset-0 w-full h-20 bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] z-0 wow animate__fadeIn"
+      class="absolute inset-0 w-full h-20 bg-[url('/images/decoration/batik.webp')] bg-repeat bg-[length:300px_300px] z-0 wow animate__fadeIn"
       data-wow-duration="1.5s"
       aria-label="background batik repeat"
     ></div>

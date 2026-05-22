@@ -3,7 +3,7 @@
     <!-- Background -->
     <div class="sticky top-0 flex justify-center z-20 overflow-hidden pointer-events-none">
       <img
-          src="/images/decoration/framegebyok.png"
+          src="/images/decoration/framegebyok.webp"
           class="w-[110%] scale-[1.1] z-20 wow animate__fadeIn"
           alt="Frame Gebyok"
           data-wow-duration="1.5s"
@@ -11,7 +11,7 @@
     </div>
 
     <div
-        class="absolute inset-0 bg-[url('/images/bg-pattern1.png')] bg-repeat bg-[length:440px_800px] opacity-50 bg-repeat z-0"
+        class="absolute inset-0 bg-[url('/images/bg-pattern1.webp')] bg-repeat bg-[length:440px_800px] opacity-50 z-0"
     ></div>
 
     <!-- SCROLLING CONTENT BELOW (buat trigger perubahan isi frame) -->
@@ -53,7 +53,7 @@
 
       <!-- Motif Batik Bottom -->
       <div
-        class="relative mt-6 w-full h-16 md:h-24 bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] pointer-events-none wow animate__fadeIn"
+        class="relative mt-6 w-full h-16 md:h-24 bg-[url('/images/decoration/batik.webp')] bg-repeat bg-[length:300px_300px] pointer-events-none wow animate__fadeIn"
         data-wow-duration="1.5s"
         aria-label="batik motif repeat"
       ></div>
@@ -76,18 +76,18 @@ function shuffle(array) {
   return array;
 }
 const galleryFilenames = shuffle([
-  'IMG_6108.JPG',
-  'IMG_6110.JPG',
-  'IMG_6115.JPG',
-  'IMG_6121.JPG',
-  'IMG_6124.JPG',
-  'IMG_6142.JPG',
-  'IMG_6146.JPG',
-  'IMG_6149.JPG',
-  'IMG_6153.JPG',
-  'IMG_6154.JPG',
-  'IMG_6176.JPG',
-  'IMG_6177.JPG'
+  'IMG_6108.webp',
+  'IMG_6110.webp',
+  'IMG_6115.webp',
+  'IMG_6121.webp',
+  'IMG_6124.webp',
+  'IMG_6142.webp',
+  'IMG_6146.webp',
+  'IMG_6149.webp',
+  'IMG_6153.webp',
+  'IMG_6154.webp',
+  'IMG_6176.webp',
+  'IMG_6177.webp'
 ])
 const images = galleryFilenames.map(name => `/images/galery/${name}`)
 

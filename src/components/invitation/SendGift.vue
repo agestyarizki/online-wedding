@@ -2,7 +2,7 @@
   <section class="relative bg-[#f9f8f4] text-center py-16 px-6 text-[#4a5b34]">
     <!-- Wayang Background Left -->
     <img
-        src="/images/decoration/wayang.png"
+        src="/images/decoration/wayang.webp"
         alt="wayang left"
         :class="[
             'absolute bottom-[-5px] left-[-60px] w-[160px] opacity-20 z-0'
@@ -11,7 +11,7 @@
 
     <!-- Wayang Background Right -->
     <img
-        src="/images/decoration/wayang.png"
+        src="/images/decoration/wayang.webp"
         alt="wayang right"
         :class="[
             'absolute bottom-[-5px] right-[-60px] w-[160px] opacity-20 z-0 scale-x-[-1]'

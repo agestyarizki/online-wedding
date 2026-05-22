@@ -14,7 +14,7 @@ export default {
                 photograph: ['Photograph', 'cursive'],
             },
             backgroundImage: {
-                'pattern1': "url('/images/bg-pattern1.png')",
+                'pattern1': "url('/images/bg-pattern1.webp')",
             },
         },
     },

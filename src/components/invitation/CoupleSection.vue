@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[url(/images/bg-pattern1.png)] bg-repeat bg-[length:440px_800px] py-20 px-6 text-center relative overflow-hidden">
+  <section class="bg-[url(/images/bg-pattern1.webp)] bg-repeat bg-[length:440px_800px] py-20 px-6 text-center relative overflow-hidden">
     <!-- LAYER 1: BATIK BACKGROUND -->
     <div class="mt-16">
       <p class="font-photograph text-5xl text-[#3f6a13] wow animate__fadeInDown" data-wow-duration="1s">Pernikahan
@@ -11,7 +11,7 @@
           data-wow-duration="1.5s"
       >
         <span
-            class="block w-full h-[300px] bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] md:bg-[length:240px_240px]"
+            class="block w-full h-[300px] bg-[url('/images/decoration/batik.webp')] bg-repeat bg-[length:300px_300px] md:bg-[length:240px_240px]"
         ></span>
       </span>
       <div class="relative max-w-sm mx-auto flex flex-col items-center">
@@ -23,7 +23,7 @@
             data-wow-delay="0.3s"
         >
           <img
-              src="/images/decoration/frame-couple.png"
+              src="/images/decoration/frame-couple.webp"
               alt="frame border"
               class="w-[19rem] h-full object-contain"
           />
@@ -36,7 +36,7 @@
             data-wow-delay="0.5s"
         >
           <img
-              src="/images/decoration/bunga-putih.png"
+              src="/images/decoration/bunga-putih.webp"
               alt="flower decor right"
               class="w-[8rem] wow animate__fadeInUp"
           />
@@ -47,7 +47,7 @@
             data-wow-delay="0.4s"
         >
           <img
-              src="/images/decoration/daun-kayu-putih.png"
+              src="/images/decoration/daun-kayu-putih.webp"
               alt="flower decor right"
               class="w-[12rem] wow animate__fadeInRight"
           />
@@ -60,7 +60,7 @@
             data-wow-delay="0.7s"
         >
           <img
-              src="/images/decoration/gelombang-cinta.png"
+              src="/images/decoration/gelombang-cinta.webp"
               alt="flower decor righ"
               class="w-[8rem] wow animate__fadeInDown"
           />
@@ -71,7 +71,7 @@
             data-wow-delay="0.5s"
         >
           <img
-              src="/images/decoration/anggrek-putih.png"
+              src="/images/decoration/anggrek-putih.webp"
               alt="flower decor right"
               class="w-[6rem] wow animate__fadeInLeft"
           />
@@ -83,7 +83,7 @@
              data-wow-delay="0.4s">
           <!-- LAYER 2: FOTO (sedikit zoom biar fit frame) -->
           <img
-              :src="`${publicBase}images/couple/IMG_6178.JPG`"
+              :src="`${publicBase}images/couple/IMG_6178.webp`"
               alt="Photo Adelia"
               :style="{ transform: 'scale(1.7) translateY(-1.5rem) translateX(-0.1rem)' }"
               class="absolute inset-0 w-[250px] mr-auto ml-auto h-full object-cover z-10"
@@ -114,7 +114,7 @@
           data-wow-duration="1.5s"
       >
         <span
-            class="block w-full h-[300px] bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] md:bg-[length:240px_240px]"
+            class="block w-full h-[300px] bg-[url('/images/decoration/batik.webp')] bg-repeat bg-[length:300px_300px] md:bg-[length:240px_240px]"
         ></span>
       </span>
       <div class="relative max-w-sm mx-auto flex flex-col items-center">
@@ -126,7 +126,7 @@
             data-wow-delay="0.3s"
         >
           <img
-              src="/images/decoration/frame-couple.png"
+              src="/images/decoration/frame-couple.webp"
               alt="frame border"
               class="w-[19rem] h-full object-contain"
           />
@@ -139,7 +139,7 @@
             data-wow-delay="0.5s"
         >
           <img
-              src="/images/decoration/bunga-putih.png"
+              src="/images/decoration/bunga-putih.webp"
               alt="flower decor right"
               class="w-[8rem] wow animate__fadeInLeft"
           />
@@ -150,7 +150,7 @@
             data-wow-delay="0.2s"
         >
           <img
-              src="/images/decoration/daun-kayu-putih.png"
+              src="/images/decoration/daun-kayu-putih.webp"
               alt="flower decor right"
               class="w-[12rem]"
           />
@@ -163,7 +163,7 @@
             data-wow-delay="0.7s"
         >
           <img
-              src="/images/decoration/gelombang-cinta.png"
+              src="/images/decoration/gelombang-cinta.webp"
               alt="flower decor right"
               class="w-[8rem] wow animate__fadeInRight"
           />
@@ -174,7 +174,7 @@
             data-wow-delay="0.5s"
         >
           <img
-              src="/images/decoration/anggrek-putih.png"
+              src="/images/decoration/anggrek-putih.webp"
               alt="flower decor righ"
               class="w-[6rem] wow animate__fadeInUp"
           />
@@ -185,7 +185,7 @@
              data-wow-delay="0.4s">
           <!-- LAYER 2: FOTO (sedikit zoom biar fit frame) -->
           <img
-              :src="`${publicBase}images/couple/IMG_6099.JPG`"
+              :src="`${publicBase}images/couple/IMG_6099.webp`"
               alt="Hafiz photo"
               :style="{ transform: 'scaleX(-1) scale(1.5) translateY(-1.2rem) translateX(-0.1rem)' }"
               class="absolute inset-0 w-[150px] mr-auto ml-auto h-full object-cover z-10"

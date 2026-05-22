@@ -1,14 +1,14 @@
 <template>
   <div
       class="fixed inset-0 bg-cover bg-center flex flex-col justify-center items-center text-center z-50 overflow-hidden z-[70]"
-      style="background-image: url('/images/cover2.jpg')"
+      style="background-image: url('/images/cover2.webp')"
   >
     <!-- Overlay putih transparan di atas background -->
     <div class="absolute inset-0 bg-white/60"></div>
 
     <!-- Frame Gebyok di atas overlay -->
     <img
-        src="/images/decoration/framegebyok.png"
+        src="/images/decoration/framegebyok.webp"
         alt="frame"
         class="absolute inset-0 w-full h-full object-cover pointer-events-none z-10 -mt-14"
     />
@@ -22,7 +22,7 @@
       <div class="rotate-45">
         <div class="animate-sway-slow" style="animation-delay: 0.3s">
           <img
-              src="/images/decoration/anggrek-putih.png"
+              src="/images/decoration/anggrek-putih.webp"
               alt="orchid top left"
               class="w-full scale-x-[-1] opacity-90"
           />
@@ -39,7 +39,7 @@
       <div class="rotate-[-30deg]">
         <div class="animate-sway-slow" style="animation-delay:1s">
           <img
-              src="/images/decoration/anggrek-putih.png"
+              src="/images/decoration/anggrek-putih.webp"
               alt="orchid top right"
               class="w-full opacity-90"
           />
@@ -50,7 +50,7 @@
 
     <!-- Bunga-bunga tambahan tersebar di layar -->
     <img
-        src="/images/decoration/bunga-putih3.png"
+        src="/images/decoration/bunga-putih3.webp"
         alt="flower top left"
         :class="[
           'absolute top-[160px] left-[30px] w-[60px] z-15 opacity-60',
@@ -58,7 +58,7 @@
         ]"
     />
     <img
-        src="/images/decoration/bunga-putih3.png"
+        src="/images/decoration/bunga-putih3.webp"
         alt="flower top right"
         :class="[
           'absolute top-[160px] right-[30px] w-[60px] z-15 opacity-60',
@@ -68,7 +68,7 @@
 
     <!-- Lower area flowers -->
     <img
-        src="/images/decoration/anggrek.png"
+        src="/images/decoration/anggrek.webp"
         alt="flower lower left"
         :class="[
           'absolute bottom-[100px] left-[25px] w-[180px] z-15 opacity-80',
@@ -76,7 +76,7 @@
         ]"
     />
     <img
-        src="/images/decoration/daun-rosella.png"
+        src="/images/decoration/daun-rosella.webp"
         alt="flower lower right"
         :class="[
           'absolute bottom-[0px] right-[-5px] w-[170px] z-15 opacity-80',
@@ -85,7 +85,7 @@
     />
 
     <img
-        src="/images/decoration/bunga-putih.png"
+        src="/images/decoration/bunga-putih.webp"
         alt="flower lower right"
         :class="[
           'absolute bottom-[30px] right-[-80px] w-[170px] z-15 opacity-80',
@@ -115,7 +115,7 @@
         style="animation-delay: 0.5s"
       >
         <img
-            src="/images/decoration/logo-wedding.png"
+            src="/images/decoration/logo-wedding.webp"
             alt="Wedding Logo"
             class="w-[160px] h-auto ml-10"
         />
@@ -158,7 +158,7 @@
 
       <!-- Wayang Background Left -->
       <img
-          src="/images/decoration/wayang.png"
+          src="/images/decoration/wayang.webp"
           alt="wayang left"
           :class="[
             'absolute bottom-5 left-[-30px] w-[160px] opacity-70 z-0'
@@ -167,7 +167,7 @@
 
       <!-- Wayang Background Right -->
       <img
-          src="/images/decoration/wayang.png"
+          src="/images/decoration/wayang.webp"
           alt="wayang right"
           :class="[
             'absolute bottom-5 right-[-30px] w-[160px] opacity-70 z-0 scale-x-[-1]'
@@ -176,21 +176,21 @@
 
       <!-- Rumput/Tanaman Kiri -->
       <img
-          src="/images/decoration/gelombang-cinta.png"
+          src="/images/decoration/gelombang-cinta.webp"
           alt="plant left"
           class="absolute bottom-0 left-[-40px] w-[180px] animate-sway-slow opacity-80"
       />
 
       <!-- Rumput/Tanaman Kanan -->
       <img
-          src="/images/decoration/daun-kayu-putih.png"
+          src="/images/decoration/daun-kayu-putih.webp"
           alt="plant right"
           class="absolute bottom-0 right-[-60px] w-[200px] animate-sway-medium opacity-80"
       />
 
       <!-- Bunga Putih Kiri Bawah -->
       <img
-          src="/images/decoration/mawar-putih.png"
+          src="/images/decoration/mawar-putih.webp"
           alt="white flower left"
           :class="[
             'absolute bottom-[40px] left-[60px] w-[100px] opacity-90 animate-sway-medium'
@@ -199,7 +199,7 @@
 
       <!-- Bunga Putih Kanan Bawah -->
       <img
-          src="/images/decoration/anggrek.png"
+          src="/images/decoration/anggrek.webp"
           alt="white flower right"
           :class="[
             'absolute bottom-[50px] right-[50px] w-[110px] opacity-90 animate-sway-medium'
@@ -207,7 +207,7 @@
       />
 
       <img
-          src="/images/decoration/rumput.png"
+          src="/images/decoration/rumput.webp"
           alt="peacocks"
           :class="[
             'absolute bottom-[20px] left-[50%] transform -translate-x-1/2 w-[150px] z-10 opacity-95 animate-sway-slow',
@@ -222,7 +222,7 @@
 
     <!-- Batik Decoration Bottom (memanjang dari kiri ke kanan) -->
     <div
-        class="absolute bottom-0 left-0 w-full h-[50px] bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] z-[100]"
+        class="absolute bottom-0 left-0 w-full h-[50px] bg-[url('/images/decoration/batik.webp')] bg-repeat bg-[length:300px_300px] z-[100]"
         aria-label="batik decoration repeat"
     ></div>
   </div>

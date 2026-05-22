@@ -12,7 +12,7 @@
         class="flex flex-col md:flex-row h-screen "
     >
       <!-- LEFT PANEL (Desktop only) -->
-      <div class="hidden md:flex flex-1 bg-[url('/images/couple/IMG_6099.JPG')] bg-cover bg-center relative">
+      <div class="hidden md:flex flex-1 bg-[url('/images/couple/STR09606.webp')] bg-cover bg-center relative">
         <div class="absolute inset-0 bg-black/40 "></div>
         <h1 class="absolute bottom-12 font-photograph italic left-12 text-white text-6xl font-[Playfair_Display]">
           Adelia & Hafizh
@@ -20,7 +20,7 @@
       </div>
 
       <!-- RIGHT PANEL -->
-      <div id="main-scroll-container" class="flex-1 overflow-y-auto overflow-x-hidden bg-[url('/cover.jpg')] bg-cover bg-center scroll-smooth">
+      <div id="main-scroll-container" class="flex-1 overflow-y-auto overflow-x-hidden bg-[url('/cover.webp')] bg-cover bg-center scroll-smooth">
         <!-- COVER -->
         <!-- COVER -->
         <CoverDesktop v-if="!isMobile" @scroll-down="scrollToSection('quote')"/>

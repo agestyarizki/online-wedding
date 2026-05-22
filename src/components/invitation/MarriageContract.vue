@@ -1,7 +1,7 @@
 <template>
   <section
       id="wedding-date"
-      class="relative bg-[url('/images/bg-pattern1.png')] bg-repeat bg-[length:440px_800px] bg-[#f9f8f4] text-[#4a5b34] text-center py-16 px-6"
+      class="relative bg-[url('/images/bg-pattern1.webp')] bg-repeat bg-[length:440px_800px] bg-[#f9f8f4] text-[#4a5b34] text-center py-16 px-6"
   >
     <!-- Top Decoration -->
     <div class="absolute top-0 left-0 w-full -translate-y-[130px] pointer-events-none z-30">
@@ -10,7 +10,7 @@
       >
         <div class="animate-sway-medium" style="animation-delay: 0.3ms">
           <img
-              src="/images/decoration/mawar-putih3.png"
+              src="/images/decoration/mawar-putih3.webp"
               class="w-full"
               alt="flower left"
           />
@@ -21,7 +21,7 @@
       >
         <div class="animate-sway-slow">
           <img
-              src="/images/decoration/daun-kayu-putih.png"
+              src="/images/decoration/daun-kayu-putih.webp"
               class="w-full -rotate-[25deg]"
               alt="flower left"
           />
@@ -32,7 +32,7 @@
       >
         <div class="animate-sway-slow" style="animation-delay: 0.3ms">
           <img
-              src="/images/decoration/anggrek-putih2.png"
+              src="/images/decoration/anggrek-putih2.webp"
               class="w-full -rotate-[25deg] -translate-x-[6px] translate-y-[6px]"
               alt="flower right"
           />
@@ -43,7 +43,7 @@
       >
         <div class="animate-sway-medium" style="animation-delay: 0.5ms">
           <img
-              src="/images/decoration/gelombang-cinta.png"
+              src="/images/decoration/gelombang-cinta.webp"
               class="w-full -rotate-[180deg] -translate-x-[6px] translate-y-[6px]"
               alt="flower right"
           />
@@ -54,7 +54,7 @@
       >
         <div class="animate-sway-slow">
           <img
-              src="/images/decoration/bunga-putih.png"
+              src="/images/decoration/bunga-putih.webp"
               class="w-full -translate-x-[6px] translate-y-[6px]"
               alt="flower right"
           />
@@ -67,7 +67,7 @@
     <div ref="fadeSection" :class="['relative z-10 flex flex-col items-center space-y-20 pb-32 fade-in-section', { visible: isVisible }]">
       <div class="w-full flex justify-center md:justify-end">
         <img
-            src="/images/decoration/tree.png"
+            src="/images/decoration/tree.webp"
             class="w-10/12 md:w-[60%] md:max-w-[800px] max-w-full -rotate-[90deg] mt-[-350px] md:mt-[-520px] mb-[-100px] translate-y-2 scale-x-[-1] translate-x-[80px] z-10"
             alt="flower right"
         />
@@ -161,7 +161,7 @@
 
   <!-- Motif Batik Bottom -->
   <div
-      class="relative w-full h-16 md:h-24 bg-[url('/images/decoration/batik.png')] bg-repeat bg-[length:300px_300px] pointer-events-none wow animate__fadeIn"
+      class="relative w-full h-16 md:h-24 bg-[url('/images/decoration/batik.webp')] bg-repeat bg-[length:300px_300px] pointer-events-none wow animate__fadeIn"
       data-wow-duration="1.5s"
       aria-label="batik motif repeat"
   ></div>

@@ -1,12 +1,12 @@
 <template>
   <section class="relative flex flex-col items-center justify-center min-h-screen overflow-hidden bg-[#f6f5ee]">
     <!-- BACKGROUND LANSKAP -->
-    <img src="/images/cover2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-70"
+    <img src="/images/cover2.webp" class="absolute inset-0 w-full h-full object-cover opacity-70"
          alt="background"/>
 
     <!-- POHON & DEKOR TENGAH -->
     <img
-        src="/images/decoration/pohon-kelapa.png"
+        src="/images/decoration/pohon-kelapa.webp"
         class="absolute top-24 left-[-80px] z-4 w-1/2 md:w-2/5 lg:w-1/3 inclined-x animate-bounce-rotate"
         alt="top left flower"
     />
@@ -14,7 +14,7 @@
     <!-- pohon kanan: flip di wrapper, animasi di child -->
     <span class="absolute top-24 right-[-80px] scale-x-[-1]">
       <img
-          src="/images/decoration/pohon-kelapa.png"
+          src="/images/decoration/pohon-kelapa.webp"
           class="animate-sway-slow-rev md:w-2/5 lg:w-1/3"
           alt="pohon kanan"
       />
@@ -23,7 +23,7 @@
     <!-- bunga kiri atas: flip di wrapper, animasi di child -->
     <span class="absolute top-5 left-[-23px] z-5 w-1/2 md:w-5/12 lg:w-1/3 scale-x-[-1]">
       <img
-          src="/images/decoration/anggrek-putih2.png"
+          src="/images/decoration/anggrek-putih2.webp"
           class="w-full animate-sway-medium"
           alt="top left flower"
       />
@@ -32,7 +32,7 @@
     <!-- bunga kanan atas: flip di wrapper, animasi di child -->
     <span class="absolute top-6 right-[-20px] z-5 w-1/2 md:w-5/12 lg:w-1/3">
       <img
-          src="/images/decoration/anggrek-putih2.png"
+          src="/images/decoration/anggrek-putih2.webp"
           class="w-full animate-sway-medium"
           alt="top right flower"
       />
@@ -41,7 +41,7 @@
 
     <!-- POHON KELAPA KIRI / KANAN -->
     <img
-      src="/images/decoration/pohon-kelapa.png"
+      src="/images/decoration/pohon-kelapa.webp"
       class="absolute left-0 bottom-20 w-1/3 md:w-1/4 lg:w-1/5 animate-sway-slow"
       alt="left palm"
     />
@@ -49,14 +49,14 @@
     <!-- palm kanan: flip di wrapper, animasi di child -->
     <span class="absolute right-0 bottom-0 w-1/3 md:w-1/4 lg:w-1/5 scale-x-[-1]">
       <img
-        src="/images/decoration/pohon-kelapa.png"
+        src="/images/decoration/pohon-kelapa.webp"
         class="animate-sway-slow-rev"
         alt="right palm"
       />
     </span>
 
     <!-- Wayang decoration - bottom left -->
-    <img src="/images/decoration/wayang.png"
+    <img src="/images/decoration/wayang.webp"
          class="absolute bottom-[150px] left-[-10px] w-[43%] md:w-[34%] lg:w-[30%] z-10 animate-breathe-slow"
          alt="wayang decoration"/>
 
@@ -73,21 +73,21 @@
 
     </div>
 
-    <img src="/images/decoration/anggrek-putih.png"
+    <img src="/images/decoration/anggrek-putih.webp"
          class="absolute bottom-0 left-[-2rem] w-[30%] md:w-[24%] lg:w-[20%] z-10 animate-sway-medium"
          alt="peacock left"/>
-    <img src="/images/decoration/anggrek.png" class="absolute bottom-0 left-[2rem] w-[30%] md:w-[24%] lg:w-[20%] animate-sway-medium"
+    <img src="/images/decoration/anggrek.webp" class="absolute bottom-0 left-[2rem] w-[30%] md:w-[24%] lg:w-[20%] animate-sway-medium"
          data-wow-delay="0.6s"
          alt="peacock left"/>
-    <img src="/images/decoration/gelombang-cinta.png" class="absolute bottom-[-10px] left-[-1rem] w-[35%] md:w-[28%] lg:w-[24%] z-10"
+    <img src="/images/decoration/gelombang-cinta.webp" class="absolute bottom-[-10px] left-[-1rem] w-[35%] md:w-[28%] lg:w-[24%] z-10"
          alt="peacock left"/>
-    <img src="/images/decoration/mawar-putih.png"
+    <img src="/images/decoration/mawar-putih.webp"
          class="absolute bottom-[0px] right-[-4rem] w-[45%] md:w-[34%] lg:w-[30%] scale-x-[-1] animate-sway-medium"/>
-    <img src="/images/decoration/bunga-putih.png"
+    <img src="/images/decoration/bunga-putih.webp"
          class="absolute bottom-[-50px] right-[-1rem] w-[45%] md:w-[34%] lg:w-[30%] scale-x-[-1] animate-sway-slow"/>
 
     <!-- DEKOR RUMPUT BAWAH -->
-    <img src="/images/decoration/rumput.png" class="absolute bottom-[-50px] w-[45%] md:w-[34%] lg:w-[30%] animate-wave" alt="grass"/>
+    <img src="/images/decoration/rumput.webp" class="absolute bottom-[-50px] w-[45%] md:w-[34%] lg:w-[30%] animate-wave" alt="grass"/>
   </section>
 </template>
 
@@ -95,7 +95,7 @@
 import {ref, onMounted, onUnmounted} from 'vue'
 
 const photos = [
-  '/images/couple/STR09663.JPG'
+  '/images/couple/STR09663.webp'
 ]
 
 const currentIndex = ref(0)
