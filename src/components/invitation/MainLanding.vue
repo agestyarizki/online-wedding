@@ -68,7 +68,8 @@
     >
       <transition name="fade" mode="out-in">
         <img :key="currentPhoto" :src="currentPhoto" alt="Foto couple"
-             class="absolute inset-0 w-full h-full object-cover object-[50%_160%] md:object-center transition-all duration-1000 ease-in-out scale-125"/>
+             class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out"
+             style="transform: scale(1.2) translateY(-8%);"/>
       </transition>
 
     </div>
@@ -95,7 +96,7 @@
 import {ref, onMounted, onUnmounted} from 'vue'
 
 const photos = [
-  '/images/couple/STR09663.webp'
+  '/images/couple/IMG_6175.webp'
 ]
 
 const currentIndex = ref(0)

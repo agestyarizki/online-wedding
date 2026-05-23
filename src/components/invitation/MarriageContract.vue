@@ -111,7 +111,7 @@
         <p class="text-lg font-medium">Kamis, 4 Juni 2026</p>
 
         <div class="flex justify-center items-center gap-2 mt-2 text-base">
-          <span>10:00 WIB – Selesai</span>
+          <span>12:00 WIB – 16.00 WIB</span>
         </div>
 
         <div class="flex justify-center items-start gap-2 mt-4 text-base leading-relaxed">
